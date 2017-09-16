@@ -7,8 +7,8 @@
     <ProjectGuid>{7B47AE2F-F68A-456C-A7E3-6FFA0FCF8AED}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ExtractAllText</RootNamespace>
-    <AssemblyName>ExtractAllText</AssemblyName>
+    <RootNamespace>TableStructure</RootNamespace>
+    <AssemblyName>TableStructure</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

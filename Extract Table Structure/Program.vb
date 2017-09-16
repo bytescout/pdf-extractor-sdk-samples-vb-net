@@ -15,27 +15,34 @@ Imports Bytescout.PDFExtractor
 Class Program
 	Friend Shared Sub Main(args As String())
 
-        ' Create Bytescout.PDFExtractor.XFAFormExtractor instance
-        Dim extractor As New XFAFormExtractor()
+        ' Create Bytescout.PDFExtractor.StructuredExtractor instance
+        Dim extractor As New StructuredExtractor()
 		extractor.RegistrationName = "demo"
 		extractor.RegistrationKey = "demo"
 
 		' Load sample PDF document
-        extractor.LoadDocumentFromFile("samplexfa.pdf")
+        extractor.LoadDocumentFromFile(".\sample3.pdf")
 
-        ' Enumerate XFA form content part types
-        For Each contentType As XFAFormContentType In [Enum].GetValues(GetType(XFAFormContentType))
 
-            'Get count of content parts of specified type
-            Dim partCount As Integer = extractor.GetCount(contentType)
+        For pageIndex As Integer = 0 To extractor.GetPageCount() - 1
 
-            ' Save parts as XML files
-            For i As Integer = 0 To partCount - 1
-                Dim fileName As String = contentType.ToString() + i.ToString() + ".xml"
-                extractor.SaveToFile(contentType, i, fileName)
-                Console.WriteLine("Saved form part " + fileName)
+            Console.WriteLine("Starting extraction from page #" + pageIndex.ToString())
+            Console.WriteLine()
+
+            extractor.PrepareStructure(pageIndex)
+
+            Dim rowCount As Integer = extractor.GetRowCount(pageIndex)
+
+            For row As Integer = 0 To rowCount - 1
+
+                Dim columnCount As Integer = extractor.GetColumnCount(pageIndex, row)
+
+                For col As Integer = 0 To columnCount - 1
+
+                    Console.WriteLine(extractor.GetCellValue(pageIndex, row, col))
+
+                Next
             Next
-
         Next
 
         Console.WriteLine()
