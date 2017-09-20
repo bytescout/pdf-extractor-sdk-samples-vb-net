@@ -7,8 +7,8 @@
     <ProjectGuid>{4ADF87C7-D5B1-44F3-B7EE-D60F18C12FE8}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SplittingExample</RootNamespace>
-    <AssemblyName>SplittingExample</AssemblyName>
+    <RootNamespace>FindKeywordAndExtractPage</RootNamespace>
+    <AssemblyName>FindKeywordAndExtractPage</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -36,7 +36,8 @@
     </Reference>
     <Reference Include="System" />
     <Compile Include="Program.vb" />
-    <Content Include="sample.pdf">
+    <Content Include="..\..\sample2.pdf">
+      <Link>sample2.pdf</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Folder Include="Properties\" />

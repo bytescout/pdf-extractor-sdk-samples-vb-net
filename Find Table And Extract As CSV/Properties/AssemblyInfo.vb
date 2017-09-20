@@ -17,12 +17,12 @@ Imports System.Runtime.InteropServices
 ' General Information about an assembly is controlled through the following 
 ' set of attributes. Change these attribute values to modify the information
 ' associated with an assembly.
-<Assembly: AssemblyTitle("ExtractAllText")>
+<Assembly: AssemblyTitle("FindTableAndExtractAsCsv")> 
 <Assembly: AssemblyDescription("")>
 <Assembly: AssemblyConfiguration("")>
 <Assembly: AssemblyCompany("")>
-<Assembly: AssemblyProduct("ExtractAllText")>
-<Assembly: AssemblyCopyright("Copyright ©  2010")>
+<Assembly: AssemblyProduct("FindTableAndExtractAsCsv")> 
+<Assembly: AssemblyCopyright("Copyright ©  2017")> 
 <Assembly: AssemblyTrademark("")>
 <Assembly: AssemblyCulture("")>
 
