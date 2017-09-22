@@ -9,8 +9,8 @@
     <ProjectGuid>{6FA1929E-814E-40D9-80D2-AB2CA5E7D347}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PDF2CSV2XLS</RootNamespace>
-    <AssemblyName>PDF2CSV2XLS</AssemblyName>
+    <RootNamespace>PDF2XLS</RootNamespace>
+    <AssemblyName>PDF2XLS</AssemblyName>
     <OldToolsVersion>3.5</OldToolsVersion>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>

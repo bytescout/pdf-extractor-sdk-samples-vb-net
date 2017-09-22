@@ -20,10 +20,10 @@ Imports System.Runtime.InteropServices
 
 ' Review the values of the assembly attributes
 
-<Assembly: AssemblyTitle("PDF2XML")> 
+<Assembly: AssemblyTitle("PDFATest")> 
 <Assembly: AssemblyDescription("")> 
 <Assembly: AssemblyCompany("")> 
-<Assembly: AssemblyProduct("PDF2XML")> 
+<Assembly: AssemblyProduct("PDFATest")> 
 <Assembly: AssemblyCopyright("Copyright �  2011")> 
 <Assembly: AssemblyTrademark("")> 
 

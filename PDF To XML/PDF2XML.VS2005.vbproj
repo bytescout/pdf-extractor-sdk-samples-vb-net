@@ -1,19 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>
-    </ProductVersion>
+    <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{ECE4C758-259D-4A66-BBE5-C8922179A44C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>ConsoleApplication1.ConsoleApplication1.Program</StartupObject>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
-    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <RootNamespace>PDF2XML</RootNamespace>
+    <AssemblyName>PDF2XML</AssemblyName>
     <MyType>Console</MyType>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +17,6 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ConsoleApplication1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +25,6 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ConsoleApplication1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <ItemGroup>
@@ -90,12 +84,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="..\..\sample1.pdf">
-      <Link>sample1.pdf</Link>
+    <Content Include="..\..\sample3.pdf">
+      <Link>sample3.pdf</Link>
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

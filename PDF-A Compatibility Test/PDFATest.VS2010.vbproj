@@ -8,9 +8,8 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{ECE4C758-259D-4A66-BBE5-C8922179A44C}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>ConsoleApplication1.ConsoleApplication1.Program</StartupObject>
-    <RootNamespace>ConsoleApplication1</RootNamespace>
-    <AssemblyName>ConsoleApplication1</AssemblyName>
+    <RootNamespace>PDFATest</RootNamespace>
+    <AssemblyName>PDFATest</AssemblyName>
     <MyType>Console</MyType>
     <OldToolsVersion>3.5</OldToolsVersion>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
@@ -21,7 +20,6 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>ConsoleApplication1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,8 +28,10 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>ConsoleApplication1.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bytescout.PDFExtractor, Version=1.0.0.12, Culture=neutral, processorArchitecture=MSIL">
@@ -79,6 +79,11 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\..\sample1.pdf">
+      <Link>sample1.pdf</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="My Project\app.manifest" />
     <None Include="My Project\Application.myapp">
       <Generator>MyApplicationCodeGenerator</Generator>
       <LastGenOutput>Application.Designer.vb</LastGenOutput>
@@ -88,12 +93,6 @@
       <CustomToolNamespace>My</CustomToolNamespace>
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\sample3.pdf">
-      <Link>sample3.pdf</Link>
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

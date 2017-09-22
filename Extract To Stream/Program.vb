@@ -10,11 +10,8 @@
 '****************************************************************************'
 
 
+Imports System.IO
 Imports Bytescout.PDFExtractor
-
-' This example demonstrates the use of profiles. Profiles are set of properties 
-' allowing to apply them to Extractor in any combination quickly. You can use 
-' predefined profiles or create you own in JSON format like in this example.
 
 Class Program
 
@@ -24,32 +21,31 @@ Class Program
         Dim extractor As New TextExtractor()
         extractor.RegistrationName = "demo"
         extractor.RegistrationKey = "demo"
-        extractor.OCRLanguageDataFolder = "c:\Program Files\Bytescout PDF Extractor SDK\net2.00\tessdata"
 
         ' Load sample PDF document
-        extractor.LoadDocumentFromFile("sample_ocr.pdf")
+        extractor.LoadDocumentFromFile(".\sample1.pdf")
 
-        ' Apply predefined profiles
-        extractor.Profiles = "scanned, no-layout"
-        ' Extract text to file
-        extractor.SaveTextToFile("result1.txt")
+        ' Get page count
+        Dim pageCount As Integer = extractor.GetPageCount()
 
+        For i As Integer = 0 To pageCount - 1
 
-        extractor.Reset()
+            ' Create new stream. You can use MemoryStream or any other System.IO.Stream inheritor.
+            Dim stream As FileStream = New FileStream(".\page" + i.ToString() + ".txt", FileMode.Create)
 
+            ' Save text from page to the file stream
+            extractor.SavePageTextToStream(i, stream)
 
-        ' Load another document
-        extractor.LoadDocumentFromFile("sample_ocr.pdf")
+            ' Close stream
+            stream.Dispose()
 
-        ' Load and apply custom profiles
-        extractor.LoadProfiles("profiles.json")
-        extractor.Profiles = "keep-formatting, ocr-forced-200dpi"
-        ' Extract text to file
-        extractor.SaveTextToFile("result2.txt")
-
+        Next
 
         extractor.Dispose()
 
+        ' Open first output file in default associated application
+        System.Diagnostics.Process.Start(".\page1.txt")
 
     End Sub
+
 End Class

@@ -10,40 +10,43 @@
 '****************************************************************************'
 
 
+Imports System
 Imports Bytescout.PDFExtractor
 
-Namespace ConsoleApplication1
+Namespace PDFATest
 
     Class Program
 
         Shared Sub Main(ByVal args As String())
 
-            ' Create Bytescout.PDFExtractor.JSONExtractor instance
-            Dim extractor As New JSONExtractor()
-            extractor.RegistrationName = "demo"
-            extractor.RegistrationKey = "demo"
+            ' Create Bytescout.PDFExtractor.PDFAValidator instance
+            Dim validator As New PDFAValidator()
+            validator.RegistrationName = "demo"
+            validator.RegistrationKey = "demo"
 
             ' Load sample PDF document
-            extractor.LoadDocumentFromFile("sample1.pdf")
+            validator.LoadDocumentFromFile("sample1.pdf")
 
-            ' Uncomment this line to get rid of empty nodes in JSON
-            'extractor.PreserveFormattingOnTextExtraction = False
+            If validator.IsPDFA Then
+                Console.WriteLine("This file conforms to the PDF/A standard")
+            Else
+                Console.WriteLine("This file doesn't conform to the PDF/A standard.")
+                Console.WriteLine("Issues:")
 
-            ' Set output image format
-            extractor.ImageFormat = OutputImageFormat.PNG
+                For Each validationError As String In validator.ValidationErrors
+                    Console.WriteLine(validationError)
+                Next
+            End If
+            
+            validator.Dispose()
 
-            ' Save images to external files
-            extractor.SaveImages = ImageHandling.OuterFile
-            extractor.ImageFolder = "images" ' Folder for external images
-            extractor.SaveJSONToFile("result_with_external_images.json")
-
-            ' Embed images into JSON as Base64 encoded string
-            extractor.SaveImages = ImageHandling.Embed
-            extractor.SaveJSONToFile("result_with_embedded_images.json")
+            Console.WriteLine()
+            Console.WriteLine("Press any key...")
+            Console.ReadKey()
 
         End Sub
 
     End Class
-    
+
 End Namespace
 

@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>8.0.50727</ProductVersion>
+    <ProductVersion>
+    </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{6FA1929E-814E-40D9-80D2-AB2CA5E7D347}</ProjectGuid>
+    <ProjectGuid>{7B47AE2F-F68A-456C-A7E3-6FFA0FCF8AED}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>PDF2CSV2XLS</RootNamespace>
-    <AssemblyName>PDF2CSV2XLS</AssemblyName>
+    <RootNamespace>FindTextSmartMatch</RootNamespace>
+    <AssemblyName>FindTextSmartMatch</AssemblyName>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -28,29 +31,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.Targets" />
   <ItemGroup>
     <Import Include="Microsoft.VisualBasic" />
     <Import Include="System" />
-  </ItemGroup>
-  <ItemGroup>
-  </ItemGroup>
-  <ItemGroup>
-    <Reference Include="Bytescout.PDFExtractor, Version=2.0.0.186, Culture=neutral, PublicKeyToken=f7dd1bd9d40a50eb, processorArchitecture=MSIL">
+    <Reference Include="Bytescout.PDFExtractor, Version=1.0.0.12, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
-  </ItemGroup>
-  <ItemGroup>
     <Compile Include="Program.vb" />
     <Compile Include="Properties\AssemblyInfo.vb" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="..\..\sample3.pdf">
-      <Link>sample3.pdf</Link>
+    <Content Include="..\..\sample2.pdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <Link>sample2.pdf</Link>
     </Content>
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.Targets" />
+  <ItemGroup>
+  </ItemGroup>
 </Project>
