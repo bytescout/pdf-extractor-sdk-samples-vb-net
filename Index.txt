@@ -2,14 +2,14 @@
 
 \Check If OCR Is Required for PDF
 \Compare PDF Documents
-\convert PDF To CSV
+\Convert PDF To CSV
 \Convert PDF To CSV By Pages
-\convert PDF To JSON
-\convert PDF To JSON With Images
-\convert PDF To XFDF
-\convert PDF To XLS
-\convert PDF To XML
-\convert XFA Form To XML in PDF
+\Convert PDF To JSON
+\Convert PDF To JSON With Images
+\Convert PDF To XFDF
+\Convert PDF To XLS
+\Convert PDF To XML
+\Convert XFA Form To XML in PDF
 \Data Masking in PDF
 \Detect Lines in PDF
 \Extract Attachments from PDF
