@@ -60,6 +60,10 @@
 \Remove Text
 \Repair Text
 \Rotate Document
+\Scanned PDF To CSV
+\Scanned PDF To JSON
+\Scanned PDF To Text
+\Scanned PDF To XML
 \SearchablePDFMaker Progress Indication
 \Split Document
 \TextExtractor Progress Indication
