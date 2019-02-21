@@ -42,6 +42,7 @@
 \Index PDF Documents In Folder
 \Index PDF Files
 \Make Searchable PDF
+\Make Searchable PDF from Image
 \Make Unsearchable PDF
 \Merge PDF Documents
 \OCR (Optical Character Recognition) and PDF
