@@ -1,8 +1,10 @@
 ## Index of source code examples:
 
+\Batch check folder agianst JSON settings
 \Check If OCR Is Required for PDF
 \Compare PDF Documents
 \Convert PDF To CSV
+\Convert PDF To CSV  (Merge multiline text to table cell)
 \Convert PDF To CSV By Pages
 \Convert PDF To JSON
 \Convert PDF To JSON With Images
@@ -69,5 +71,6 @@
 \Split Document
 \TextExtractor Progress Indication
 \ZUGFeRD Invoice Extraction
+\Batch check folder agianst JSON settings\InputFiles
 \Check If OCR Is Required for PDF\InputFiles
 \Index PDF Documents In Folder\Files
