@@ -57,6 +57,7 @@
 \PDF-A Compatibility Test
 \Profiles
 \Read Hindi Text
+\Read Text From Noisy Image
 \Read Values from Form Fields
 \Reduce Memory Usage
 \Remove Empty Pages
