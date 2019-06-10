@@ -50,6 +50,8 @@
 \Merge PDF Documents
 \OCR (Optical Character Recognition) and PDF
 \OCR Analyser in PDF
+\OCR With Best Dataset
+\OCR With Fast Dataset
 \Optimize PDF
 \Parallel Processing of PDF files
 \PDF files Batch Processing
