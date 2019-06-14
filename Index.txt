@@ -12,6 +12,7 @@
 \Convert PDF To XLS
 \convert PDF To XLSX
 \Convert PDF To XML
+\Convert Protected PDF Document to XLS
 \Convert XFA Form To XML in PDF
 \Data Masking in PDF
 \Detect Lines in PDF
@@ -50,6 +51,7 @@
 \Make Searchable PDF from Image
 \Make Unsearchable PDF
 \Merge PDF Documents
+\Merge Protected PDF Documents
 \OCR (Optical Character Recognition) and PDF
 \OCR Analyser in PDF
 \OCR With Best Dataset
@@ -76,6 +78,7 @@
 \Scanned PDF To XML
 \SearchablePDFMaker Progress Indication
 \Split Document
+\Split Protected PDF Document
 \TextExtractor Progress Indication
 \ZUGFeRD Invoice Extraction
 \Batch check folder agianst JSON settings\InputFiles
