@@ -69,6 +69,7 @@
 \Read Hindi Text
 \Read Text From Noisy Image
 \Read Values from Form Fields
+\Reading and Writing to Azure Blob
 \Reduce Memory Usage
 \Remove Empty Pages
 \Remove Text
