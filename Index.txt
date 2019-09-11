@@ -80,6 +80,7 @@
 \Scanned PDF To Text
 \Scanned PDF To XML
 \SearchablePDFMaker Progress Indication
+\Sensitive Data Detector
 \Split Document
 \Split Protected PDF Document
 \TextExtractor Progress Indication
