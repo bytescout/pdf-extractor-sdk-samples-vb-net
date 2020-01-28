@@ -64,6 +64,7 @@
 \OCR With Best Dataset
 \OCR With Fast Dataset
 \OCR With Mean Dataset
+\OCR with Multiple Languages
 \Optimize PDF
 \Parallel Processing of PDF files
 \PDF files Batch Processing
