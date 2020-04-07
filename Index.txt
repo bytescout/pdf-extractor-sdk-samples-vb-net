@@ -65,6 +65,7 @@
 \Merge Protected PDF Documents
 \OCR (Optical Character Recognition) and PDF
 \OCR Analyser in PDF
+\OCR Modes
 \OCR With Best Dataset
 \OCR With Fast Dataset
 \OCR With Mean Dataset
