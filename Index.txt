@@ -95,6 +95,7 @@
 \SearchablePDFMaker Progress Indication
 \Sensitive Data Detector
 \Split Document
+\Split document into separate pages
 \Split Protected PDF Document
 \TextExtractor Progress Indication
 \ZUGFeRD Invoice Extraction
