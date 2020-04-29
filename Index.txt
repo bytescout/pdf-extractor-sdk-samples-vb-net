@@ -13,6 +13,7 @@
 \Convert PDF To XFDF
 \Convert PDF To XLS
 \convert PDF To XLSX
+\Convert PDF To XLSX by pages
 \Convert PDF To XML
 \Convert Protected PDF Document to XLS
 \Convert XFA Form To XML in PDF
