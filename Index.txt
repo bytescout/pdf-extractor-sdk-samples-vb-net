@@ -39,7 +39,9 @@
 \Extract Video from PDF
 \Extraction From Complex Borderless Tables
 \Filter Watermark Text
+\Find Credit Card Number in PDF with Regex
 \Find Email Addresses in PDF using Regex
+\Find Invoice Total Amount in PDF with Regex
 \Find Keyword in PDF And Extract Page
 \Find Keyword in PDF And Extract Text
 \Find Phone Number in PDF with Regex
@@ -51,6 +53,8 @@
 \Find Text in PDF with Smart Match
 \Find Text With Hyphens in PDF
 \Find US Address in PDF with Regex
+\Find Website Addresses in PDF with Regex
+\Find Zip Code in PDF with Regex
 \Get Word Coordinates in JSON
 \Get Word Coordinates in XML
 \Index PDF Documents In Folder
