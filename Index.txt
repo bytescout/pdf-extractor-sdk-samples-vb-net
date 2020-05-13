@@ -34,6 +34,7 @@
 \Extract Table Structure from PDF
 \Extract Text By Columns from PDF
 \Extract Text By Pages from PDF
+\Extract Text from Foldable Brochure Booklet
 \Extract Text From Page Area in PDF
 \Extract Text from PDF
 \Extract Video from PDF
