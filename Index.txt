@@ -83,6 +83,7 @@
 \Parallel Processing of PDF files
 \PDF files Batch Processing
 \PDF Invoice Parsing
+\PDF to Scanned PDF
 \PDF To XML With Images
 \PDF-A Compatibility Test
 \Profiles
