@@ -44,6 +44,7 @@
 \Extract Video from PDF
 \Extraction From Complex Borderless Tables
 \Filter Watermark Text
+\Find Borderless Table in PDF And Extract As CSV
 \Find Credit Card Number in PDF with Regex
 \Find Email Addresses in PDF using Regex
 \Find Invoice Total Amount in PDF with Regex
