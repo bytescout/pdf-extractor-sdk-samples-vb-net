@@ -53,6 +53,8 @@
 \Find Phone Number in PDF with Regex
 \Find SSN Number in PDF with Regex
 \Find Table in PDF And Extract As CSV
+\Find Table in PDF And Extract As JSON
+\Find Table in PDF And Extract As Text
 \Find Table in PDF And Extract As XML
 \Find Text in PDF
 \Find Text in PDF with Regex
